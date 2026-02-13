@@ -525,8 +525,23 @@ nav {
 <div class="contact-footer">
   <div class="contact-footer-inner">
     <div class="contact-footer-brand">
-      <img src="logo.png" alt="Rocky Run Solutions" class="footer-logo">
-      <p>Your Home, Only Better. Full-service handyman and home repair serving the greater Massachusetts area.</p>
+      <h4 style="color:var(--copper-light);font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.6rem;">Service Area</h4>
+      <svg viewBox="300 100 500 300" style="width:100%;max-width:320px;" xmlns="http://www.w3.org/2000/svg">
+        <path d="M345,195 L355,180 L375,175 L395,168 L410,160 L430,155 L445,148 L460,152 L475,145 L495,140 L510,135 L525,138 L540,132 L560,128 L580,125 L600,120 L620,118 L640,115 L655,118 L670,112 L690,110 L710,108 L730,112 L745,108 L760,115 L775,110 L790,118 L805,115 L820,120 L835,118 L850,125 L865,128 L880,135 L895,140 L910,148 L925,155 L935,165 L940,178 L950,190 L958,200 L970,195 L985,188 L1000,192 L1015,200 L1028,212 L1035,225 L1030,240 L1020,252 L1035,260 L1045,272 L1050,285 L1042,298 L1030,305 L1018,295 L1005,288 L998,300 L1010,312 L1020,325 L1015,340 L1000,348 L985,342 L970,335 L960,345 L945,350 L930,342 L915,338 L900,345 L885,352 L868,348 L855,355 L840,360 L820,358 L805,365 L785,368 L765,372 L745,375 L725,370 L705,365 L685,360 L665,355 L645,350 L625,348 L605,352 L585,358 L565,362 L545,355 L525,348 L505,345 L485,350 L470,358 L455,365 L440,360 L420,355 L400,348 L380,340 L365,330 L355,315 L348,295 L342,275 L338,255 L335,235 L338,215 L342,205 Z" fill="rgba(196,115,50,0.08)" stroke="var(--copper)" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M958,200 L970,195 L985,188 L1000,192 L1015,200 L1028,212 L1035,225 L1030,240 L1020,252 L1035,260 L1045,272 L1050,285 L1042,298 L1030,305 L1018,295 L1005,288 L998,300 L988,292 L980,280 L972,268 L978,255 L982,242 L976,228 L965,215 L958,200" fill="rgba(196,115,50,0.08)" stroke="var(--copper)" stroke-width="1.5" stroke-linejoin="round"/>
+        <circle cx="890" cy="285" r="95" fill="rgba(196,115,50,0.15)" stroke="var(--copper-light)" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.8"/>
+        <circle cx="890" cy="285" r="3" fill="var(--copper-light)"/>
+        <text x="900" y="283" fill="var(--copper-light)" font-size="11" font-family="DM Sans,sans-serif" font-weight="600">Taunton</text>
+        <text x="848" y="218" fill="rgba(255,255,255,0.4)" font-size="9" font-family="DM Sans,sans-serif">Boston</text>
+        <text x="815" y="260" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Brockton</text>
+        <text x="920" y="245" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Plymouth</text>
+        <text x="800" y="320" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Fall River</text>
+        <text x="860" y="350" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">New Bedford</text>
+        <text x="940" y="340" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Cape Cod</text>
+        <text x="855" y="198" fill="rgba(255,255,255,0.2)" font-size="8" font-family="DM Sans,sans-serif" font-style="italic">25-mile radius</text>
+        <line x1="890" y1="285" x2="890" y2="192" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="3,2"/>
+      </svg>
+      <p style="color:rgba(255,255,255,0.35);font-size:0.78rem;margin-top:0.4rem;max-width:280px;">Serving Brockton, Plymouth, Fall River, New Bedford &amp; surrounding MA towns.</p>
     </div>
     <div class="contact-footer-col">
       <h4>Contact Info</h4>
@@ -548,6 +563,7 @@ nav {
       </div>
     </div>
     <div class="contact-footer-cta">
+      <img src="logo.png" alt="Rocky Run Solutions" style="height:40px;width:auto;margin-bottom:0.8rem;">
       <h3>Ready for Your Free Estimate?</h3>
       <p>Click below to chat with us instantly &mdash; we'll get you a quote fast.</p>
       <a href="javascript:void(0)" class="btn btn-primary" onclick="if(window.gainwrkChat)window.gainwrkChat.toggle();" style="width:fit-content;">
@@ -555,38 +571,6 @@ nav {
         Get a Free Quote
       </a>
     </div>
-  </div>
-  <!-- Service Area Map -->
-  <div class="service-area-map" style="max-width:1200px;margin:0 auto;padding:2rem 2rem 0;">
-    <h4 style="color:var(--copper-light);font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;text-align:center;">Service Area — 25 Mile Radius</h4>
-    <div style="display:flex;justify-content:center;">
-      <svg viewBox="0 0 800 500" style="max-width:600px;width:100%;" xmlns="http://www.w3.org/2000/svg">
-        <!-- Massachusetts outline (simplified) -->
-        <path d="M45,195 L55,180 L75,175 L95,168 L110,160 L130,155 L145,148 L160,152 L175,145 L195,140 L210,135 L225,138 L240,132 L260,128 L280,125 L300,120 L320,118 L340,115 L355,118 L370,112 L390,110 L410,108 L430,112 L445,108 L460,115 L475,110 L490,118 L505,115 L520,120 L535,118 L550,125 L565,128 L580,135 L595,140 L610,148 L625,155 L635,165 L640,178 L650,190 L658,200 L670,195 L685,188 L700,192 L715,200 L728,212 L735,225 L730,240 L720,252 L735,260 L745,272 L750,285 L742,298 L730,305 L718,295 L705,288 L698,300 L710,312 L720,325 L715,340 L700,348 L685,342 L670,335 L660,345 L645,350 L630,342 L615,338 L600,345 L585,352 L568,348 L555,355 L540,360 L520,358 L505,365 L485,368 L465,372 L445,375 L425,370 L405,365 L385,360 L365,355 L345,350 L325,348 L305,352 L285,358 L265,362 L245,355 L225,348 L205,345 L185,350 L170,358 L155,365 L140,360 L120,355 L100,348 L80,340 L65,330 L55,315 L48,295 L42,275 L38,255 L35,235 L38,215 L42,205 Z"
-          fill="rgba(196,115,50,0.08)" stroke="var(--copper)" stroke-width="2" stroke-linejoin="round"/>
-        <!-- Cape Cod -->
-        <path d="M658,200 L670,195 L685,188 L700,192 L715,200 L728,212 L735,225 L730,240 L720,252 L735,260 L745,272 L750,285 L742,298 L730,305 L718,295 L705,288 L698,300 L688,292 L680,280 L672,268 L678,255 L682,242 L676,228 L665,215 L658,200"
-          fill="rgba(196,115,50,0.08)" stroke="var(--copper)" stroke-width="2" stroke-linejoin="round"/>
-        <!-- Service area circle (centered roughly on Taunton area) -->
-        <circle cx="590" cy="285" r="120" fill="rgba(196,115,50,0.15)" stroke="var(--copper-light)" stroke-width="2" stroke-dasharray="8,4" opacity="0.8"/>
-        <circle cx="590" cy="285" r="4" fill="var(--copper-light)"/>
-        <!-- Taunton label -->
-        <text x="604" y="282" fill="var(--copper-light)" font-size="13" font-family="DM Sans,sans-serif" font-weight="600">Taunton</text>
-        <!-- Nearby city labels -->
-        <text x="475" y="210" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Worcester</text>
-        <text x="548" y="188" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Boston</text>
-        <text x="430" y="330" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Providence ↓</text>
-        <text x="640" y="340" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Cape Cod</text>
-        <text x="515" y="260" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Brockton</text>
-        <text x="620" y="240" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Plymouth</text>
-        <text x="490" y="315" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Fall River</text>
-        <text x="560" y="345" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">New Bedford</text>
-        <!-- 25 mi label -->
-        <text x="560" y="185" fill="rgba(255,255,255,0.25)" font-size="10" font-family="DM Sans,sans-serif" font-style="italic">25-mile radius</text>
-        <line x1="590" y1="285" x2="590" y2="167" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4,3"/>
-      </svg>
-    </div>
-    <p style="text-align:center;color:rgba(255,255,255,0.35);font-size:0.8rem;margin-top:0.8rem;">Serving communities within 25 miles of Taunton, MA &mdash; including Brockton, Plymouth, Fall River, New Bedford, and surrounding towns.</p>
   </div>
   <div class="footer-bottom">
     <p>&copy; 2026 Rocky Run Solutions LLC. All rights reserved. | <a href="tel:5083793850">508-379-3850</a> | <a href="https://rockyrunsolutions.com">RockyRunSolutions.com</a></p>
