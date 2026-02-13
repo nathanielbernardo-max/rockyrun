@@ -339,7 +339,7 @@ nav {
 <!-- TRUST BAR -->
 <div class="trust-bar">
   <div class="trust-inner">
-    <div class="trust-item"><span class="trust-icon">&#9733;</span> Fully Licensed &amp; Insured</div>
+    <div class="trust-item"><span class="trust-icon">&#9733;</span><span>Fully Licensed &amp; Insured<br><span style="font-size:0.75rem;color:var(--gray-text);font-weight:400;">MA # 218413</span></span></div>
     <div class="trust-item"><span class="trust-icon">&#10003;</span> Free Estimates</div>
     <div class="trust-item"><span class="trust-icon">&#9202;</span> Prompt &amp; Reliable</div>
     <div class="trust-item"><span class="trust-icon">&#9889;</span> Serving Massachusetts</div>
@@ -412,7 +412,7 @@ nav {
     <div class="why-card fade-in">
       <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
       <h3>Licensed &amp; Insured</h3>
-      <p>Full coverage and proper licensing means your home is always protected.</p>
+      <p>Full coverage and proper licensing means your home is always protected.<br><span style="font-size:0.82rem;color:var(--copper);font-weight:600;">MA # 218413</span></p>
     </div>
     <div class="why-card fade-in">
       <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
@@ -556,8 +556,40 @@ nav {
       </a>
     </div>
   </div>
+  <!-- Service Area Map -->
+  <div class="service-area-map" style="max-width:1200px;margin:0 auto;padding:2rem 2rem 0;">
+    <h4 style="color:var(--copper-light);font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;text-align:center;">Service Area — 25 Mile Radius</h4>
+    <div style="display:flex;justify-content:center;">
+      <svg viewBox="0 0 800 500" style="max-width:600px;width:100%;" xmlns="http://www.w3.org/2000/svg">
+        <!-- Massachusetts outline (simplified) -->
+        <path d="M45,195 L55,180 L75,175 L95,168 L110,160 L130,155 L145,148 L160,152 L175,145 L195,140 L210,135 L225,138 L240,132 L260,128 L280,125 L300,120 L320,118 L340,115 L355,118 L370,112 L390,110 L410,108 L430,112 L445,108 L460,115 L475,110 L490,118 L505,115 L520,120 L535,118 L550,125 L565,128 L580,135 L595,140 L610,148 L625,155 L635,165 L640,178 L650,190 L658,200 L670,195 L685,188 L700,192 L715,200 L728,212 L735,225 L730,240 L720,252 L735,260 L745,272 L750,285 L742,298 L730,305 L718,295 L705,288 L698,300 L710,312 L720,325 L715,340 L700,348 L685,342 L670,335 L660,345 L645,350 L630,342 L615,338 L600,345 L585,352 L568,348 L555,355 L540,360 L520,358 L505,365 L485,368 L465,372 L445,375 L425,370 L405,365 L385,360 L365,355 L345,350 L325,348 L305,352 L285,358 L265,362 L245,355 L225,348 L205,345 L185,350 L170,358 L155,365 L140,360 L120,355 L100,348 L80,340 L65,330 L55,315 L48,295 L42,275 L38,255 L35,235 L38,215 L42,205 Z"
+          fill="rgba(196,115,50,0.08)" stroke="var(--copper)" stroke-width="2" stroke-linejoin="round"/>
+        <!-- Cape Cod -->
+        <path d="M658,200 L670,195 L685,188 L700,192 L715,200 L728,212 L735,225 L730,240 L720,252 L735,260 L745,272 L750,285 L742,298 L730,305 L718,295 L705,288 L698,300 L688,292 L680,280 L672,268 L678,255 L682,242 L676,228 L665,215 L658,200"
+          fill="rgba(196,115,50,0.08)" stroke="var(--copper)" stroke-width="2" stroke-linejoin="round"/>
+        <!-- Service area circle (centered roughly on Taunton area) -->
+        <circle cx="590" cy="285" r="120" fill="rgba(196,115,50,0.15)" stroke="var(--copper-light)" stroke-width="2" stroke-dasharray="8,4" opacity="0.8"/>
+        <circle cx="590" cy="285" r="4" fill="var(--copper-light)"/>
+        <!-- Taunton label -->
+        <text x="604" y="282" fill="var(--copper-light)" font-size="13" font-family="DM Sans,sans-serif" font-weight="600">Taunton</text>
+        <!-- Nearby city labels -->
+        <text x="475" y="210" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Worcester</text>
+        <text x="548" y="188" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Boston</text>
+        <text x="430" y="330" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Providence ↓</text>
+        <text x="640" y="340" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Cape Cod</text>
+        <text x="515" y="260" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Brockton</text>
+        <text x="620" y="240" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Plymouth</text>
+        <text x="490" y="315" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">Fall River</text>
+        <text x="560" y="345" fill="rgba(255,255,255,0.35)" font-size="11" font-family="DM Sans,sans-serif">New Bedford</text>
+        <!-- 25 mi label -->
+        <text x="560" y="185" fill="rgba(255,255,255,0.25)" font-size="10" font-family="DM Sans,sans-serif" font-style="italic">25-mile radius</text>
+        <line x1="590" y1="285" x2="590" y2="167" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4,3"/>
+      </svg>
+    </div>
+    <p style="text-align:center;color:rgba(255,255,255,0.35);font-size:0.8rem;margin-top:0.8rem;">Serving communities within 25 miles of Taunton, MA &mdash; including Brockton, Plymouth, Fall River, New Bedford, and surrounding towns.</p>
+  </div>
   <div class="footer-bottom">
-    <p>&copy; 2025 Rocky Run Solutions LLC. All rights reserved. | <a href="tel:5083793850">508-379-3850</a> | <a href="https://rockyrunsolutions.com">RockyRunSolutions.com</a></p>
+    <p>&copy; 2026 Rocky Run Solutions LLC. All rights reserved. | <a href="tel:5083793850">508-379-3850</a> | <a href="https://rockyrunsolutions.com">RockyRunSolutions.com</a></p>
   </div>
 </div>
 
@@ -656,7 +688,7 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
 
 <!-- GAINWRK CHAT WIDGET -->
-<script src="widget.js" data-client="rocky"></script>
+<script src="https://gainwrk-widget.pages.dev/widget.js" data-client="rocky"></script>
 
 </body>
 </html>
