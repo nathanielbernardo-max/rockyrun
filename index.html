@@ -175,7 +175,7 @@ nav {
 
 /* WHY US */
 .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.why-card { text-align: center; padding: 2rem 1.3rem; border-radius: 14px; background: var(--white); border: 1px solid rgba(0,0,0,0.05); transition: all 0.3s; }
+.why-card { text-align: center; padding: 2rem 1.3rem; border-radius: 14px; background: var(--white); border: 2px solid var(--copper); transition: all 0.3s; }
 .why-card:hover { transform: translateY(-3px); box-shadow: 0 10px 36px rgba(0,0,0,0.06); }
 .why-icon { width: 58px; height: 58px; border-radius: 12px; background: linear-gradient(135deg, var(--copper), var(--copper-light)); color: var(--white); display: inline-flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 1rem; }
 .why-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem; }
@@ -298,13 +298,14 @@ nav {
   .why-grid { grid-template-columns: 1fr; }
   .about-content { grid-template-columns: 1fr; gap: 2rem; }
   .cta-inner { flex-direction: column; text-align: center; }
-  .contact-footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .contact-footer-inner { grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; }
 }
 @media (max-width: 600px) {
   .carousel-slide { grid-template-columns: 1fr; }
   .gallery-grid-slide { grid-template-columns: 1fr; }
   .about-stats { flex-direction: column; gap: 0.8rem; }
   .trust-inner { gap: 1rem; }
+  .contact-footer-inner { grid-template-columns: 1fr; gap: 2rem; }
 }
 </style>
 <!-- Schema.org Structured Data -->
@@ -567,7 +568,7 @@ nav {
 <section class="section" id="about">
   <div class="about-content">
     <div class="about-img-wrap fade-in">
-      <img src="trailer.png" alt="Rocky Run Solutions Service Trailer">
+      <img src="Richard_Hanson.jpg" alt="Richard Hanson - Rocky Run Solutions Owner">
     </div>
     <div class="about-text fade-in">
       <div class="section-label">About Us</div>
@@ -576,7 +577,7 @@ nav {
       <p>We believe everyone deserves a home they're proud of. That's why we offer fair, transparent pricing and treat every home like our own.</p>
       <div class="about-stats">
         <div><div class="stat-num">100%</div><div class="stat-label">Satisfaction Focused</div></div>
-        <div><div class="stat-num">Free</div><div class="stat-label">Estimates Always</div></div>
+        <div><div class="stat-num">Free</div><div class="stat-label">Estimates</div></div>
         <div><div class="stat-num">Local</div><div class="stat-label">Massachusetts Based</div></div>
       </div>
     </div>
@@ -590,26 +591,32 @@ nav {
       <h3 style="color:var(--copper-light);font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.6rem;">Service Area</h3>
       <svg viewBox="0 0 300 240" style="width:100%;max-width:280px;" xmlns="http://www.w3.org/2000/svg">
         <!-- Eastern MA coast outline -->
-        <path d="M0,40 L15,35 L35,28 L55,22 L70,18 L88,25 L105,15 L120,8 L138,18 L155,12 L170,20 L182,30 L188,42 L195,55 L200,65 L210,60 L222,52 L235,56 L248,64 L258,75 L264,88 L260,100 L252,112 L264,118 L272,130 L276,142 L270,155 L260,162 L250,155 L240,148 L234,158 L244,170 L252,182 L248,195 L236,202 L222,196 L210,190 L202,200 L190,204 L178,196 L166,192 L154,198 L142,205 L128,200 L118,208 L104,212 L88,210 L74,216 L58,220 L42,224 L26,228 L12,224 L0,218 Z" fill="rgba(196,115,50,0.08)" stroke="var(--copper)" stroke-width="1.5" stroke-linejoin="round"/>
-        <!-- Cape Cod hook -->
-        <path d="M200,65 L210,60 L222,52 L235,56 L248,64 L258,75 L264,88 L260,100 L252,112 L264,118 L272,130 L276,142 L270,155 L260,162 L250,155 L240,148 L234,158 L226,150 L220,140 L214,128 L218,115 L222,104 L216,90 L208,78 L200,65" fill="rgba(196,115,50,0.08)" stroke="var(--copper)" stroke-width="1.5" stroke-linejoin="round"/>
-        <!-- 25-mile service radius -->
-        <circle cx="150" cy="138" r="82" fill="rgba(196,115,50,0.12)" stroke="var(--copper-light)" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.8"/>
+        <path d="M60,15 L75,13 L88,20 L105,10 L120,4 L138,13 L155,8 L170,15 L182,24 L188,34 L195,45 L200,53 L210,48 L222,42 L235,45 L248,52 L258,62 L264,72 L260,82 L252,92 L264,97 L272,107 L276,117 L270,128 L260,134 L250,128 L240,122 L234,130 L244,140 L252,150 L248,160 L236,166 L222,161 L210,156 L202,164 L190,168 L178,161 L166,158 L154,163 L142,169 L128,165 L118,172 L104,175 L88,173 L74,178 L58,182 L50,180 L50,182 Z" fill="rgba(196,115,50,0.08)" stroke="var(--copper)" stroke-width="1.5" stroke-linejoin="round"/>
+        <!-- Rhode Island outline -->
+        <path d="M50,182 L58,182 L74,178 L82,173 L78,188 L72,198 L62,208 L48,212 L36,207 L28,198 L24,188 L30,182 L40,178 L50,182 Z" fill="rgba(196,115,50,0.06)" stroke="var(--copper)" stroke-width="1.5" stroke-linejoin="round"/>
+        <!-- RI/MA border dashed line -->
+        <line x1="50" y1="182" x2="82" y2="173" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+        <!-- Service radius circle -->
+        <circle cx="145" cy="122" r="55" fill="rgba(196,115,50,0.12)" stroke="var(--copper-light)" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.8"/>
         <!-- Taunton dot -->
-        <circle cx="150" cy="138" r="3" fill="var(--copper-light)"/>
+        <circle cx="145" cy="122" r="3.5" fill="var(--copper-light)"/>
         <!-- Labels -->
-        <text x="158" y="136" fill="var(--copper-light)" font-size="12" font-family="DM Sans,sans-serif" font-weight="600">Taunton</text>
-        <text x="108" y="72" fill="rgba(255,255,255,0.45)" font-size="10" font-family="DM Sans,sans-serif">Boston</text>
-        <text x="82" y="115" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Brockton</text>
-        <text x="198" y="100" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Plymouth</text>
-        <text x="68" y="178" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Fall River</text>
-        <text x="118" y="205" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">New Bedford</text>
-        <text x="220" y="192" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Cape Cod</text>
-        <!-- Radius line + label -->
-        <line x1="150" y1="138" x2="150" y2="58" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="3,2"/>
-        <text x="118" y="62" fill="rgba(255,255,255,0.22)" font-size="8" font-family="DM Sans,sans-serif" font-style="italic">25-mi radius</text>
+        <text x="154" y="120" fill="var(--copper-light)" font-size="12" font-family="DM Sans,sans-serif" font-weight="700">Taunton</text>
+        <text x="120" y="168" fill="rgba(255,255,255,0.45)" font-size="10" font-family="DM Sans,sans-serif" font-weight="500">New Bedford</text>
+        <text x="30" y="200" fill="rgba(255,255,255,0.45)" font-size="10" font-family="DM Sans,sans-serif" font-weight="500">Warwick, RI</text>
+        <text x="68" y="150" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Fall River</text>
+        <text x="82" y="92" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Brockton</text>
+        <text x="198" y="82" fill="rgba(255,255,255,0.35)" font-size="9" font-family="DM Sans,sans-serif">Plymouth</text>
+        <!-- RI state label -->
+        <text x="28" y="218" fill="rgba(255,255,255,0.2)" font-size="8" font-family="DM Sans,sans-serif" font-style="italic">Rhode Island</text>
+        <!-- MA state label -->
+        <text x="100" y="38" fill="rgba(255,255,255,0.15)" font-size="8" font-family="DM Sans,sans-serif" font-style="italic">Massachusetts</text>
+        <!-- Warwick dot -->
+        <circle cx="40" cy="194" r="2.5" fill="var(--copper-light)" opacity="0.7"/>
+        <!-- New Bedford dot -->
+        <circle cx="140" cy="162" r="2.5" fill="rgba(255,255,255,0.3)"/>
       </svg>
-      <p style="color:rgba(255,255,255,0.35);font-size:0.78rem;margin-top:0.4rem;max-width:280px;">Serving <a href="https://www.google.com/maps/place/Taunton,+MA/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.45);text-decoration:none;">Brockton, Plymouth, Fall River, New Bedford</a> &amp; surrounding MA towns.</p>
+      <p style="color:rgba(255,255,255,0.35);font-size:0.78rem;margin-top:0.4rem;max-width:280px;">Serving the greater <a href="https://www.google.com/maps/place/Taunton,+MA/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.45);text-decoration:none;">Taunton, New Bedford, Warwick</a> &amp; surrounding towns.</p>
     </div>
     <div class="contact-footer-col">
       <h3>Contact Info</h3>
